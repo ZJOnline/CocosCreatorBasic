@@ -1,6 +1,7 @@
 import SceneManager from "../Utils/SceneManager/SceneManager";
 import { LoaderMgr } from "../Utils/LoaderMgr";
 import { gen_handler } from "../Utils/Utils";
+import { TimerMgr } from "../Utils/TimerMgr";
 
 const {ccclass, property} = cc._decorator;
 
@@ -27,5 +28,7 @@ export default class Main extends cc.Component {
         SceneManager.Instance.loadScene("Main");
     }
 
-    // update (dt) {}
+    update(dt) {
+        TimerMgr.getInst().update(dt);
+    }
 }

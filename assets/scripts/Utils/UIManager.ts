@@ -129,7 +129,7 @@ export class UIManager {
                 TweenUtil.from({ node, duration: transition.duration || 1, opacity: 0, tweenFunc: transition.tweenFunc || TweenFunc.Linear });
                 break;
             case UI_TRANSITION_TYPE.RightIn:
-                // TweenUtil.from({ node, duration: transition.duration || 1, x: -50, tweenFunc: transition.tweenFunc || TweenFunc.Linear });
+                TweenUtil.from({ node, duration: transition.duration || 1, x: -200, tweenFunc: transition.tweenFunc || TweenFunc.Linear });
                 break;
         }
     }

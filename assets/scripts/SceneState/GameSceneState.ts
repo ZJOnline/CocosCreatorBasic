@@ -18,9 +18,9 @@ export default class GameSceneState extends ISceneState {
     enterScene() {
         console.log("enter game scene");
         UIManager.get_inst().show(UI_CONFIG.BackUI, {
-            transType: UI_TRANSITION_TYPE.RightIn,
+            transType: UI_TRANSITION_TYPE.FadeIn,
             // tweenFunc: Function,
-            duration: 2,
+            duration: 1,
         });
     }
     

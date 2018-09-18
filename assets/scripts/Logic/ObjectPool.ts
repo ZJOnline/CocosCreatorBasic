@@ -19,8 +19,8 @@ export default class ObjectPool extends cc.Component {
     public inited: boolean = false;
 
     onLoad() {
-        this.init();
         ObjectPool.instance = this;
+        this.init();
     }
 
     start () {
